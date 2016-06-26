@@ -28,8 +28,8 @@ class GenusFormType extends AbstractType
             ->add('funFact')
             ->add('isPublished', ChoiceType::class, [
                 'choices' => [
-                    'Yes' => true,
-                    'No' => false
+                    'Yes' => 1,
+                    'No' => 0
                 ]
             ])
             ->add('firstDiscoveredAt', DateType::class, [
